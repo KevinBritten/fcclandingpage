@@ -61,10 +61,10 @@ min-width: 980px;
     	}
 }
 
-.nav-link-text {
+.nav-link {
 	font-family: 'garamond';
 }
-.nav-link {
+.nav-link-li {
 	position: relative;
 	display: inline-block;
 	font-size: 1.3rem;
