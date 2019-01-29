@@ -1,5 +1,10 @@
+h1 {
+	font-size: 2.3rem
+}
+
 #header-img {
 margin-top: -100px;
+min-width: 980px;
 	width: 100%;
 	display: inline-block;
 }
@@ -16,25 +21,55 @@ margin-top: -100px;
 	border-width: 3px;
 }
 
-
-body {
-	margin-bottom: 500px
+#header-title {
+	display: inline;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    z-index: 1;
+    margin: 5px 0px 0px 10px;
+    font-family: 'nothing you could do';
 }
+
+
+
+/*#header-spacer {
+	position: relative;	
+	display: inline-block;
+	margin-bottom: 80px;
+}*/
 
 #nav-bar {
 	position: absolute;
-	top: 30px;
+	min-width: 320px;
+	padding: .6rem 2rem;
+	top: 38px;
 	right: 0px;
-	margin-right: 5rem;
+	margin-right: 0rem;
 	display: inline-block;
-	background-color: rgba(255, 255, 255, .8);
+	background-color: rgba(255, 255, 255, .9);
 
 }
 
+@media only screen and (max-width: 390px) {
+    	.nav-link-text {
+    	font-size: .9rem;
+    }
+    	#nav-bar {
+    		min-width: 10px;
+    	}
+}
+
+.nav-link-text {
+	font-family: 'garamond';
+}
 .nav-link {
 	position: relative;
 	display: inline-block;
-	color: white;
+	font-size: 1.3rem;
+	margin: 0px 3px;
+
 }
 
 #header-div {
@@ -47,23 +82,70 @@ body {
 .container {
 	position: relative;
 	display: block;
-	padding-top: 80px;
+/*	margin-top: 80px;*/
+	padding: 85px 10px 10px 10px;
 }
 
 .section-title {
-	margin: 10px 35%;
+	margin: 10px 30%;
 	text-align: center;
-	font-family: 'arial';
+	font-family: 'Nothing You Could Do','Garamond';
 	font-weight: 550;
 	border-style: dashed;
+	padding-top: .3rem;
+	padding-bottom: .1rem;
 
 }
 
 #history-text {
 	font-family: arial;
 	font-weight: 100;
-	border-style: solid;
-	border-width: .23rem;
+/*	border-style: solid;
+	border-width: .23rem;*/
 	padding: .2rem;
+	text-align: center;
+}
 
+#history-container {
+	background-color:#c1b37c;
+}
+
+#products-container {
+	background-color:#ded2bf;
+}
+
+#video {
+	display: block;	
+	width: 500px;
+    margin: 5rem auto;
+}
+
+#product-images {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 300px;
+	margin-bottom: 50px;
+}
+
+.product-image-div {
+	max-width: 45%;
+	max-height: 300px;
+}
+
+.product-image {
+	max-width: 100%;
+	max-height: 300px;
+}
+
+    @media only screen and (max-width: 600px) {
+    	#video {
+    	width: 200px;
+    }
+}
+
+
+#contact-container {
+	background-color:#c1b37c;
+	padding-bottom: 500px
 }
