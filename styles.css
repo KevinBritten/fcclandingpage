@@ -1,3 +1,7 @@
+body {
+	margin: 0px;
+}
+
 h1 {
 	font-size: 2.3rem
 }
@@ -82,7 +86,7 @@ min-width: 980px;
 .container {
 	position: relative;
 	display: block;
-/*	margin-top: 80px;*/
+	margin: 0px;
 	padding: 85px 10px 10px 10px;
 }
 
@@ -146,6 +150,6 @@ min-width: 980px;
 
 
 #contact-container {
-	background-color:#c1b37c;
-	padding-bottom: 500px
+	background-color:#96614a;
+	padding-bottom: 430px
 }
